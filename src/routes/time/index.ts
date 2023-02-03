@@ -1,5 +1,5 @@
 // Import's
-import { Hono } from 'https://deno.land/x/hono@v3.0.0-rc.10/mod.ts';
+import { Hono } from 'https://deno.land/x/hono@v2.7.5/mod.ts';
 
 // Routes
 import RelativeRoute from './relative.ts';

@@ -1,8 +1,6 @@
 // Import's
-import { Hono } from 'https://deno.land/x/hono@v3.0.0-rc.10/mod.ts';
-
-// @deno-types="npm:@types/luxon"
-import { DateTime } from 'npm:luxon';
+import { Hono } from 'https://deno.land/x/hono@v2.7.5/mod.ts';
+import { DateTime } from 'https://esm.sh/luxon@3.2.1';
 
 // App (Hono)
 const app = new Hono();

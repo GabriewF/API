@@ -1,5 +1,5 @@
 import { serve } from 'https://deno.land/std@0.176.0/http/server.ts';
-import { Hono } from 'https://deno.land/x/hono@v3.0.0-rc.10/mod.ts';
+import { Hono } from 'https://deno.land/x/hono@v2.7.5/mod.ts';
 
 const app = new Hono();
 
