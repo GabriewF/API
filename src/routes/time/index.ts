@@ -1,14 +1,13 @@
 // Import's
-import { Hono } from 'https://deno.land/x/hono@v2.7.5/mod.ts';
-
-// Routes
-import RelativeRoute from './relative.ts';
+import { Hono } from 'hono';
 
 // App (Hono)
 const app = new Hono();
 
+// Routes
+import RelativeRoute from '@routes/time/relative.ts';
+
 // Route Routes
-app.get('/', (c) => c.text('Hello Time'));
 app.route('/relative', RelativeRoute);
 
 // Export

@@ -1,0 +1,19 @@
+{
+  // Tasks
+  "tasks": {
+    "start": "deno run --allow-net src/index.ts",
+    "dev": "deno run --allow-net --watch src/index.ts"
+  },
+
+  // Import Map
+  "imports": {
+    // Packages
+    "luxon": "https://esm.sh/luxon@3.2.1",
+    "server": "https://deno.land/std@0.176.0/http/server.ts",
+    "hono": "https://deno.land/x/hono@v2.7.5/mod.ts",
+
+    // Path Aliases
+    "@routes/": "./src/routes/",
+    "@errors/": "./src/errors/"
+  }
+}
