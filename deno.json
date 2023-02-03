@@ -10,10 +10,6 @@
     // Packages
     "luxon": "https://esm.sh/luxon@3.2.1",
     "server": "https://deno.land/std@0.176.0/http/server.ts",
-    "hono": "https://deno.land/x/hono@v2.7.5/mod.ts",
-
-    // Path Aliases
-    "@routes/": "./src/routes/",
-    "@errors/": "./src/errors/"
+    "hono": "https://deno.land/x/hono@v2.7.5/mod.ts"
   }
 }

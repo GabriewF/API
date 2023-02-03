@@ -5,7 +5,7 @@ import { Hono } from 'hono';
 const app = new Hono();
 
 // Routes
-import RelativeRoute from '@routes/time/relative.ts';
+import RelativeRoute from './relative.ts';
 
 // Route Routes
 app.route('/relative', RelativeRoute);
