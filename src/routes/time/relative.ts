@@ -11,17 +11,9 @@ app.get('/:timestamp/:locale?', (c) => {
   const locale = c.req.param('locale')
   
   const InputDate = new Date(date);
-  const NowDate = new Date();
+  const diff = DateTime.fromJSDate(InputDate);
 
-  const InputTimestamp = InputDate.getTime();
-  const NowTimestamp = NowDate.getTime();
-
-  if (isNaN(InputTimestamp)) c.text('Invalid timestamp!')
-
-  const diffTime = Math.abs(NowTimestamp - InputTimestamp);
-  const diff = DateTime.fromMillis(diffTime, { locale });
-
-  return c.text(String(diff.toRelative()));
+  return c.text(String(diff.toRelative({ locale })));
 });
 
 // Export
