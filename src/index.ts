@@ -6,7 +6,7 @@ import { serve } from 'server';
 const app = new Hono();
 
 // Routes
-import TimeRoute from './routes/time/index.ts';
+import TimeRoute from '@routes/time/index.ts';
 
 // (/) Routes
 app.get('/', c => c.json({
